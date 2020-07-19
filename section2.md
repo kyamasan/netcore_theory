@@ -351,3 +351,64 @@ Ctrl + Shift + P > Sqlite Open Database > reactivities.db を選択すると、S
 EFMigrationsHistory を右クリックして SHOW TABLE を選択すると、履歴情報が確認できる。
 
 ### データの追加方法
+
+Persistence の DataContext クラスに OnModelCreating メソッドをオーバーライドする。
+
+```cs
+protected override void OnModelCreating(ModelBuilder builder)
+{
+  builder.Entity<Value>()
+  .HasData(
+    new Value { Id = 1, Name = "Value 101" },
+    new Value { Id = 2, Name = "Value 102" },
+    new Value { Id = 3, Name = "Value 103" }
+  );
+}
+```
+
+### DI
+
+依存性注入を使用するには、コンストラクターでパラメータを受け取り、パラメータからプライベートフィールド(\_をつける)を作成する。
+
+```cs
+public class ValuesController : ControllerBase
+{
+  private readonly DataContext _context;
+  public ValuesController(DataContext context)
+  {
+    this._context = context;
+  }
+
+  [HttpGet]
+  public ActionResult<IEnumerable<Value>> Get()
+  {
+    var values = _context.Values.ToList();
+    return Ok(values);
+  }
+}
+```
+
+### 非同期実行について
+
+DI を通じて実行されるクエリは非常に処理時間がかかる事も多い。
+その為、非同期処理化しておくことが重要。
+パフォーマンスへの悪影響は少ないが、これでアプリケーションがスケールするようになる。
+
+クエリを別スレッドに渡すことで、新たに別で取得したスレッドをブロックすることがなくなる。
+
+メソッドに async を付けて、ActionResult を Task でラップする。
+クエリ処理に await を付けて、ToList を ToListAsync に変更する。
+
+```cs
+using Microsoft.EntityFrameworkCore;
+
+public class ValuesController : ControllerBase
+{
+  [HttpGet]
+  public async Task<ActionResult<IEnumerable<Value>>> Get()
+  {
+    var values = await _context.Values.ToListAsync();
+    return Ok(values);
+  }
+}
+```
