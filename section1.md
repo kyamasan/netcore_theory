@@ -103,3 +103,44 @@ Persistence は domain に依存する。(Domain には Persistence が使用す
 以下のようなメッセージが右下に出るので、yes を選択すると、.vscode フォルダが作成され、launch.json、tasks.json が作成される。
 
 > Required assets to build and debug are missing from 'netcore_theory'. Add them?
+
+### ソリューション構成について深堀り
+
+Persistence.csproj の中身について
+
+> <Project Sdk="Microsoft.NET.Sdk">
+
+"Microsoft.NET.Sdk"への参照が含まれている。
+
+> <ProjectReference Include="..\Domain\Domain.csproj" /
+
+他プロジェクトへの参照もここで確認できる。
+
+> <TargetFramework>netstandard2.0</TargetFramework>
+
+現状、netstandard2.0 をターゲットフレームワークとしている。
+今後、他のパッケージ(エンティティフレームワークなど)を追加していくにつれて、このターゲットの値も更新していく必要がある。
+マイクロソフトは、最大の互換性を担保する為に、最も低いバージョンからプロジェクトを作成することを推奨している。
+
+例えば、netstandard2.0 をターゲットにして作成されたプログラムは.NET Framework、.NET Core、Xamarin のプロジェクト全てで使用できるが、netstandard2.0 から netcore3.1 にバージョンアップすると、.NET Core のプロジェクトでしか使用できなくなる。
+https://www.fenet.jp/dotnet/column/environment/1850/#NET_Standard
+
+```csproj
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
+```
+
+bin と obj フォルダを見た目から削除するには、vscode の File タブ>Preferences>Settings の画面を開く。
+キーワード検索で exclude と入力し、Files:Exclude に以下のパターンを追加すれば OK。
+
+> **/bin
+> **/obj
