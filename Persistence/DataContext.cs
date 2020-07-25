@@ -12,6 +12,7 @@ namespace Persistence
     }
 
     public DbSet<Value> Values { get; set; }
+    public DbSet<Activity> Activity { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

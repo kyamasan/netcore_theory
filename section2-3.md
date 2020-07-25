@@ -412,3 +412,41 @@ public class ValuesController : ControllerBase
   }
 }
 ```
+
+### create-react-app
+
+> npx create-react-app client-app --use-npm --typescript
+
+public フォルダの中に index.html1 つしかないので SPA と呼ばれる。
+
+React のバージョン 2.0 から typesript がオプションとして用意された。
+
+### CORS 設定
+
+```cs
+public void ConfigureServices(IServiceCollection services)
+{
+  services.AddCors(opt =>
+  {
+    opt.AddPolicy("CorsPolicy", policy =>
+    {
+      policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("ttp://localhost:3000");
+    });
+  });
+}
+
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+  app.UseCors("CorsPolicy");
+}
+```
+
+### Semantic UI React
+
+https://react.semantic-ui.com/usage
+
+> yarn add semantic-ui-react
+
+public>index.html に以下のリンクを追加
+
+> <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
