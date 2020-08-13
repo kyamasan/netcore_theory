@@ -1461,11 +1461,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Persistence\\Persistence.csproj",
+      "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\KOHEI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Persistence\\obj\\",
+      "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KOHEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1481,8 +1481,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\Domain.csproj"
+            "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\Domain.csproj"
             }
           }
         }
@@ -1521,7 +1521,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

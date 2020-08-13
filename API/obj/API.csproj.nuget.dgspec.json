@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\api\\API.csproj": {}
+    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\api\\API.csproj": {
+    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\api\\API.csproj",
+        "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\API.csproj",
         "packagesPath": "C:\\Users\\KOHEI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\api\\obj\\",
+        "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KOHEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Application\\Application.csproj"
+              "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Application\\Application.csproj"
               }
             }
           }
@@ -65,18 +65,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Application\\Application.csproj": {
+    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\KOHEI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Application\\obj\\",
+        "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KOHEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,11 +92,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\Domain.csproj"
+              "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Persistence\\Persistence.csproj"
+              "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -110,6 +110,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -127,18 +131,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\Domain.csproj": {
+    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\KOHEI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KOHEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -182,18 +186,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\KOHEI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KOHEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -209,8 +213,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\Domain.csproj"
+              "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\Domain.csproj"
               }
             }
           }
@@ -249,7 +253,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

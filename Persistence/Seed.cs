@@ -5,13 +5,13 @@ using Domain;
 
 namespace Persistence
 {
-  public class Seed
-  {
-    public static void SeedData(DataContext context)
+    public class Seed
     {
-      if (!context.Activity.Any())
-      {
-        var activities = new List<Activity>
+        public static void SeedData(DataContext context)
+        {
+            if (!context.Activities.Any())
+            {
+                var activities = new List<Activity>
                 {
                     new Activity
                     {
@@ -105,9 +105,9 @@ namespace Persistence
                     }
                 };
 
-        context.Activity.AddRange(activities);
-        context.SaveChanges();
-      }
+                context.Activities.AddRange(activities);
+                context.SaveChanges();
+            }
+        }
     }
-  }
 }

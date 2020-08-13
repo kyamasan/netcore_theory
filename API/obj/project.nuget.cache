@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CIjlwgjU5DtvWtOBzEus7HCwmzI0urOHH22KHNOybjH74BnsJYL+urDJHeXTX0IhnI+PzYVZtSJUfBFL+HuGSQ==",
+  "dgSpecHash": "pzR59Y7Ne/zovpUeV+it6BfQuphbA5j8CT3x4d0l+z+OMRFAZ10VtxGvQ9HC6o864Qy2WPAmxK2cy9JgDo+ZHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\KOHEI\\.nuget\\packages\\mediatr\\7.0.0\\mediatr.7.0.0.nupkg.sha512",
+    "C:\\Users\\KOHEI\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\7.0.0\\mediatr.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\KOHEI\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\KOHEI\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\KOHEI\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

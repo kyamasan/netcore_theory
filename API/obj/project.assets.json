@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "MediatR/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.dll": {}
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "type": "package",
         "compile": {
@@ -436,6 +458,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Domain": "1.0.0",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "Persistence": "1.0.0"
         },
         "compile": {
@@ -473,6 +496,31 @@
     }
   },
   "libraries": {
+    "MediatR/7.0.0": {
+      "sha512": "sgfHxkBsmMlHOD564SnLqTvSbAuGlFiZfc6ybxBSI1wYV/2u+Y5TXtFoIhCISFg5/s/6aMvB338QC2JseHsjTA==",
+      "type": "package",
+      "path": "mediatr/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/MediatR.dll",
+        "lib/netstandard2.0/MediatR.dll",
+        "mediatr.7.0.0.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/7.0.0": {
+      "sha512": "DRf8jBnjBg84da1L1L0YmwqkhCV+UJTg7bTBHOhleWrLfrtSK5h5aNeE1HOofs1Afisq03B6H2C10NmS47gmqA==",
+      "type": "package",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll",
+        "mediatr.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
+        "mediatr.extensions.microsoft.dependencyinjection.nuspec"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "sha512": "1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
       "type": "package",
@@ -1204,11 +1252,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\API\\API.csproj",
+      "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\api\\API.csproj",
       "packagesPath": "C:\\Users\\KOHEI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\API\\obj\\",
+      "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KOHEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1224,8 +1272,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Application\\Application.csproj"
+            "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Application\\Application.csproj"
             }
           }
         }
@@ -1262,7 +1310,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "I5pWu6dybV5mnGKytoDy31Eq0Aq5J1vkOVJoQaWk53kPAluK8cNnZgkzVnOR1g0wfzjpxr01jxTwu2iTTPDIOw==",
+  "dgSpecHash": "TbQQQ++zrCVNPbug9X4LEcTdIyH8MxAzE2k+I1NDVL78b1IicpX2MsOW+xP0PkNtB6q+a4O0sOAme+vDyS8o4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\KOHEI\\.nuget\\packages\\mediatr\\7.0.0\\mediatr.7.0.0.nupkg.sha512",
+    "C:\\Users\\KOHEI\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\7.0.0\\mediatr.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\KOHEI\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\KOHEI\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\KOHEI\\.nuget\\packages\\microsoft.data.sqlite.core\\3.1.2\\microsoft.data.sqlite.core.3.1.2.nupkg.sha512",

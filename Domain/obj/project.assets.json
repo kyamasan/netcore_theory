@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\KOHEI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore_theory\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KOHEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -233,7 +233,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
