@@ -4,5 +4,6 @@ obj
 appsettings.json
 *.db
 *.vs
-*.vscode
+.vscode/*
 node_modules
+Persistence/Migrations/*

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pzR59Y7Ne/zovpUeV+it6BfQuphbA5j8CT3x4d0l+z+OMRFAZ10VtxGvQ9HC6o864Qy2WPAmxK2cy9JgDo+ZHQ==",
+  "dgSpecHash": "soEOwzLqjLwJs9ZlurZFU6/aX1x1S5zq8sd2YeVUAEtiG00jVpRTiyEPGERG/ixiEpeWNL/+te8QJuy9xPzWWQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KOHEI\\.nuget\\packages\\mediatr\\7.0.0\\mediatr.7.0.0.nupkg.sha512",
     "C:\\Users\\KOHEI\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\7.0.0\\mediatr.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

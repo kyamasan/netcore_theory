@@ -229,3 +229,30 @@ key が変更されると component が再描画される。
   editActivity={editActivity}
 />
 ```
+
+## section6
+
+### Button コンポーネントの onClick イベントの引数について
+
+一見引数ナシに見えるが、マウスオーバーで 2 つの引数が存在することが分かる。
+
+> (JSX attribute) onClick?: ((event: React.MouseEvent<HTMLButtonElement, MouseEvent>, data: ButtonProps) => void) | undefined
+> Called after user's click.
+
+> @param event — React's original SyntheticEvent.
+> @param data — All props.
+
+```js
+onClick={() => deleteActivity(activity.id)}
+```
+
+### Data 再設定コマンド
+
+API フォルダの reactivities.db を削除
+
+> dotnet ef database drop -p Persistence/ -s API/
+
+再設定
+
+> cd ../
+> dotnet watch run

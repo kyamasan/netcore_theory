@@ -311,7 +311,7 @@ DbSet に指定した名前と同じものが name に入っているはず。
 
 ※dotnet ef -h、dotnet ef database -h で都度コマンドは確認できる。
 
-> dotnet ef database
+> dotnet ef database -h
 
 ### アプリケーション実行時に MIgration を実行する
 

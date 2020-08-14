@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\API.csproj": {}
+    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\API.csproj": {
+    "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\API.csproj",
+        "projectPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\api\\API.csproj",
         "packagesPath": "C:\\Users\\KOHEI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\API\\obj\\",
+        "outputPath": "C:\\Users\\KOHEI\\Documents\\GitHub\\netcore\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KOHEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
